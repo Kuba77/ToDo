@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/main.css" />
+	<title>ToDo list</title>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="display-4 mb-2">ToDo list manager</div>
+		<div class="h4 mb-5">task list for today</div>
+
+		<!-- List of tasks -->
+		<div class="card mb-4">
+			<ul id="tasksList" class="list-group list-group-flush">
+			</ul>
+			<form id="editForm" class="none">
+				<div class="form-group">
+					<input type="text" class="form-control" id="taskEditName" placeholder="Task name">
+					<input type="text" class="form-control" id="taskEditDesc" placeholder="Task description">
+				</div>
+				<button type="submit" class="btn btn-primary  btn-lg active">Edit</button>
+			</form>
+		</div>
+		<!-- //List of tasks -->
+
+		<!-- Form -->
+		<div class="card bg-light">
+			<div class="card-header">Add new task</div>
+			<div class="card-body">
+				<form id="form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="taskInputName" placeholder="Task name" required>
+						<small id="emailHelp" class="form-text text-muted">
+							Name of task</small>
+						<input type="text" class="form-control" id="taskInputDesc" placeholder="Task description"
+							required>
+						<small id="emailHelp" class="form-text text-muted">
+							Description ( what do we do, how much time do we spend, what
+							we get the result ).</small>
+					</div>
+					<button type="submit" class="btn btn-primary  btn-lg active">Add</button>
+				</form>
+			</div>
+		</div>
+		<!-- //Form  -->
+
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
